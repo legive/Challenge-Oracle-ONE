@@ -80,7 +80,7 @@ header {
 .buttons-left {
    display: flex;
    flex-direction: row;
-   gap: 1%;
+   gap: 10px;
    justify-content: center;
    font-size: 16px;
 }
@@ -153,7 +153,7 @@ header {
    box-shadow: black;
    min-width: 200px;
    max-width: 400px;
-   
+   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
    
   
 }
@@ -229,7 +229,7 @@ footer .redes a {
       grid-template-columns: 1fr;
       grid-template-rows: 2fr 1fr;
       margin: auto 200px auto auto;
-      gap: 0;
+      gap: 30px;
    }
    .caricature{
       display: none;
@@ -240,3 +240,9 @@ footer .redes a {
    }
 
 }
+/*Para hacer la pagina responsive cuando tenga un tamaño de telefono*/
+@media screen and (max-width:500px) {
+   .buttons-left{
+     flex-wrap: wrap;/*Para acomodar los botones en dos lineas cuando ya no quepan en el contenedor*/
+   } 
+    }
