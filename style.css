@@ -207,13 +207,16 @@ header {
    height: 100%;
 }
 /*Pie de página*/
-footer {
+.footer {
    background-color: var(--color-blue);
    display: flex;
    flex-direction: column;
    justify-content: center;
+   align-items: center;
     width: 100vw;
-   height: 50px;
+   height: 10%;
+
+   
 }
 
 .redes {
@@ -221,7 +224,7 @@ footer {
    flex-direction: row;
    justify-content: center;
    gap: 20px;
-  
+    
 }
 footer .redes a {
    color: #fff;
@@ -232,6 +235,7 @@ footer .redes a {
 .dev {
    color: white;
    text-align: center;
+  
 }
 
 /*Para hacer la pagina responsive cuando tenga un tamaño de tablet*/
