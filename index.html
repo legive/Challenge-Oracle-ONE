@@ -25,7 +25,7 @@
 <!--LADO IZQUIERDO-->
             <div class="left">
                 <textarea id="user-text" placeholder="Ingrese el texto aqui"
-                    onkeypress="return validarTexto(event)"></textarea>
+                    onkeypress="return validateText(event)"></textarea>
 
                 <div class="message">
                     <img src="/img/Exclamacion.png" alt="">
@@ -33,18 +33,19 @@
                 </div>
 
                 <div class="buttons-left">
-                    <button class="btn-left-1">Encriptar</button>
-                    <button class="btn-left-2">Desencriptar</button>
+                    <button onclick="encrypt()" class="btn-left-1">Encriptar</button>
+                    <button onclick="decrypt()" class="btn-left-2">Desencriptar</button>
+                    <button onclick="reset()" class="btn-left-1">Reset</button>
 
                 </div>
 
             </div>
 <!--LADO DERECHO-->
-            <div class="right">
-                <img class="caricature " src="/img/Muñecoimagen.png" alt="">
-                <p id="text1" class="right-text1 ">Ningun mensaje fue encontrado</p>
-                <p id="text2" class="right-text2">Ingresa el texto que desees encriptar o desencriptar</p>
-                <button class="btn-left-2 hide">Copiar</button>
+            <div id="right" class="right ">
+                <img id="caricature" class="caricature " src="/img/Muñecoimagen.png" alt="">
+                <p id="right-text1" class="right-text1  ">Ningun mensaje fue encontrado</p>
+                <p id="right-text2" class="right-text2 ">Ingresa el texto que desees encriptar o desencriptar</p>
+                <button onclick="copyText()" id="right-btn" class="btn-left-2 hide">Copiar</button>
             </div>
 
 
@@ -77,6 +78,7 @@
 
 
     </footer>
+    <script src="app.js" defer></script>
 </body>
 
 </html>

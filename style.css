@@ -31,11 +31,12 @@ body {
 /*CONTENEDOR PRINCIPAL DEL ENCRIPTADOR*/
 .encoded {
    width: 90%;
-   height: 95%;
+   height: 90%;
    display: flex;
    flex-direction: column;
    padding: 10px;
    box-sizing: border-box;
+   
   
 }
 /*ENCABEZADO*/
@@ -88,7 +89,7 @@ header {
 .btn-left-1 {
    border-radius: 24px;
    max-width: 328px;
-   width: 328px;
+   width: 228px;
    height: 67px;
    padding: 24px;
    box-sizing: border-box;
@@ -99,7 +100,7 @@ header {
 
 .btn-left-2 {
    border-radius: 24px;
-   max-width: 328px;
+   max-width: 228px;
    width: 328px;
    height: 67px;
    padding: 24px;
@@ -114,7 +115,7 @@ header {
 #user-text {
  
    width: 100%;
-   height: 90%;
+   height: 80%;
    background: none;
    /*quitamos el fondo*/
    font-size: 32px;
@@ -149,6 +150,7 @@ header {
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   
    gap: 20px;
    box-shadow: black;
    min-width: 200px;
@@ -165,6 +167,10 @@ header {
 .hide {
    display: none;
 }
+.adjust{
+   justify-content: space-between;
+}
+
 /*Los textos o mensajes que estan en el lado derecho*/
 
 .right-text1 {
@@ -174,8 +180,13 @@ header {
    line-height: 29px;
    letter-spacing: 0em;
    text-align: center;
+   height: auto;
 }
-
+.adjustText{
+   width: 100%;
+   height: auto;
+   text-align: start;
+}
 .right-text2 {
    font-family: Inter;
    font-size: 16px;
@@ -183,6 +194,7 @@ header {
    line-height: 24px;
    letter-spacing: 0em;
    text-align: center;
+   height: auto;
 }
 /*Cuando ya tengo el texto encriptado*/
 .encoded-text {
