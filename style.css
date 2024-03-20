@@ -12,23 +12,24 @@ html {
    background: #F3F5FC;
 
    width: 100vw;
-   
+
 }
+
 /*VARIABLES GLOBALES*/
 :root {
    --color-blue: #0A3871;
 }
 
 body {
-  
+
    display: flex;
    flex-direction: column;
    align-items: center;
    height: 100vh;
    gap: 1%;
- 
- 
-  }
+
+
+}
 
 /*CONTENEDOR PRINCIPAL DEL ENCRIPTADOR*/
 .encoded {
@@ -37,9 +38,10 @@ body {
    display: flex;
    flex-direction: column;
    box-sizing: border-box;
-   
-  
+
+
 }
+
 /*ENCABEZADO*/
 
 header {
@@ -47,7 +49,7 @@ header {
    height: 168px;
    display: flex;
    margin-top: 0px;
- 
+
 
 }
 
@@ -67,18 +69,20 @@ header {
    display: grid;
    grid-template-columns: 2fr 400px;
    align-items: end;
-    
-  
-  
+
+
+
 }
+
 /*LADO IZQUIERDO*/
 .left {
    height: 100%;
    display: flex;
    flex-direction: column;
-   
-   
- }
+
+
+}
+
 /*Los botnes de la izquierda*/
 .buttons-left {
    display: flex;
@@ -86,7 +90,7 @@ header {
    gap: 10px;
    justify-content: center;
    font-size: 16px;
-  
+
    height: 15%;
 }
 
@@ -115,13 +119,14 @@ header {
    font-size: 16px;
 
 }
+
 /*text area donde se ingresa el texto*/
 #user-text {
- 
+
    width: 100%;
    height: 80%;
    background: none;
-     /*quitamos el fondo*/
+   /*quitamos el fondo*/
    font-size: 32px;
    color: var(--color-blue);
    /*Asignamos el color segun la variable creada en root*/
@@ -134,16 +139,18 @@ header {
 
 
 }
+
 /*el mensaje de solo minuscula*/
 .message {
    display: flex;
    flex-direction: row;
    height: 5%;
-   
+
    gap: 20px;
    align-items: center;
    font-size: 12px;
 }
+
 /*LADO DERECHO*/
 .right {
    background-color: white;
@@ -155,24 +162,27 @@ header {
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   
+
    gap: 20px;
    box-shadow: black;
    min-width: 200px;
    max-width: 400px;
    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
-   
-  
+
+
 }
+
 /*la caricatura del aldo derecho*/
 .caricature {
    width: 80%;
 }
+
 /*Para ocultar una etiqueta*/
 .hide {
    display: none;
 }
-.adjust{
+
+.adjust {
    justify-content: space-between;
 }
 
@@ -187,11 +197,13 @@ header {
    text-align: center;
    height: auto;
 }
-.adjustText{
+
+.adjustText {
    width: 100%;
    height: auto;
    text-align: start;
 }
+
 .right-text2 {
    font-family: Inter;
    font-size: 16px;
@@ -201,6 +213,7 @@ header {
    text-align: center;
    height: auto;
 }
+
 /*Cuando ya tengo el texto encriptado*/
 .encoded-text {
    font-family: Inter;
@@ -211,6 +224,7 @@ header {
    text-align: left;
    height: 100%;
 }
+
 /*Pie de página*/
 .footer {
    background-color: var(--color-blue);
@@ -218,10 +232,10 @@ header {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-    width: 100vw;
+   width: 100vw;
    height: 10%;
 
-   
+
 }
 
 .redes {
@@ -229,65 +243,108 @@ header {
    flex-direction: row;
    justify-content: center;
    gap: 20px;
-    
+
 }
+
 footer .redes a {
    color: #fff;
    font-size: 30px;
 }
+
 /*Quien lo realizó*/
 
 .dev {
    color: white;
    text-align: center;
-  
+
 }
 
 /*Para hacer la pagina responsive cuando tenga un tamaño de tablet*/
 @media screen and (max-width:770px) {
-   .main{
+   .main {
       display: grid;
-     /* grid-template-columns: 1fr;*/
-      grid-template-columns:1fr;
+      /* grid-template-columns: 1fr;*/
+      grid-template-columns: 1fr;
       margin: auto 200px auto auto;
       gap: 30px;
    }
-   .caricature{
+
+   .caricature {
       display: none;
    }
-   .right{
+
+   .right {
       height: 100%;
-       min-width: 100%;
+      min-width: 100%;
    }
 
 }
+
 /*Para hacer la pagina responsive cuando tenga un tamaño de telefono*/
 @media screen and (max-width:500px) {
-   .buttons-left{
-     flex-wrap: wrap;/*Para acomodar los botones en dos lineas cuando ya no quepan en el contenedor*/
-   } 
-   header{
-height: 0;
+
+   .encoded {
+      width: 100%;
+      height: 90%;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 15% 85%;
+      padding: 10px;
+      box-sizing: border-box;
+   
 
    }
-   #user-text {
-      height: 80%;
-   
-   }
+
+   .main {
+      height: 90%;
+      width: 100%;
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
   
+
+   }
+
    .left {
-      height: 50%;
-      gap:5px;
-   
+      height: 60%;
+      gap: 2px;
       }
+   #user-text {
+      height: 50%;
+      font-size: 20px;
+
+   }
+   .buttons-left {
+      flex-wrap: wrap;
+      /*Para acomodar los botones en dos lineas cuando ya no quepan en el contenedor*/
+      height: 50%;
+      gap: 1px;
       
-.main {
-   width: 100%;
-   align-items: flex-start;
-   justify-content: center;
-   margin-top: 100px;
+   }
 
-   
+
+   .btn-left-1, .btn-left-2 {
+      height: 30%;
+      padding: 0;
+      font-size: 12px;
+   }
+
+ 
+
+   .right {
+      height: 40%;
+     
+   }
+   .right-text1, .right-text2{
+      font-size: 14px;
+   }
+
+
+
+
+
+
+
+
+
 }
-
-    }
