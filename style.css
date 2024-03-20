@@ -37,7 +37,6 @@ body {
    display: flex;
    flex-direction: column;
    box-sizing: border-box;
-  
    
   
 }
@@ -48,6 +47,7 @@ header {
    height: 168px;
    display: flex;
    margin-top: 0px;
+ 
 
 }
 
@@ -67,8 +67,7 @@ header {
    display: grid;
    grid-template-columns: 2fr 400px;
    align-items: end;
-   
-   
+    
   
   
 }
@@ -248,8 +247,8 @@ footer .redes a {
 @media screen and (max-width:770px) {
    .main{
       display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 2fr 1fr;
+     /* grid-template-columns: 1fr;*/
+      grid-template-columns:1fr;
       margin: auto 200px auto auto;
       gap: 30px;
    }
@@ -267,4 +266,27 @@ footer .redes a {
    .buttons-left{
      flex-wrap: wrap;/*Para acomodar los botones en dos lineas cuando ya no quepan en el contenedor*/
    } 
+   header{
+height: 0;
+
+   }
+   #user-text {
+      height: 80%;
+   
+   }
+  
+   .left {
+      height: 50%;
+   
+      }
+      
+.main {
+   width: 100%;
+   align-items: flex-start;
+   justify-content: center;
+   margin-top: 100px;
+
+   
+}
+
     }
